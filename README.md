@@ -2,11 +2,11 @@
 This repository contains the init Containers defination, use and implementation of it.<br>
 <li>
     Official Doc Link :https://kubernetes.io/docs/concepts/workloads/pods/init-containers/ 
- </li>
-# What is init Containers, where we use it ?
+ </li><br>
+# What is init Containers, where we use it ? <br>
 
-A Pod can have multiple containers running apps within it, but it can also have one or more init containers, which are run before the app containers are started.<br> Init containers are exactly like regular containers, except: <br> <li> <ul>Init containers always run to completion.</ul>
-    <ul>Each init container must complete successfully before the next one starts.</ul></li>
+A Pod can have multiple containers running apps within it, but it can also have one or more init containers, which are run before the app containers are started.<br> Init containers are exactly like regular containers, except: <br> <li> Init containers always run to completion.</li>
+    <li>Each init container must complete successfully before the next one starts.</li>
     <br>
     <br>
         We use the init containers because we have to check whether the pod has all resources or not.<br> if pod doesn't have the resources the it is of no use.<br> for example,  Consider We have to launch an application which requires some resources hence we write some rules or we assigning that resiurces to run that app so that resources should always with the applicatio , in kubernetes when we have to launcha a pad we are creating a file that contains all the resources when that resources allow or if they are present then and then only my pod is ruuning else not.(like we need some service accounts to running the pod).
