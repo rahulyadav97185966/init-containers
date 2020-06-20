@@ -2,7 +2,7 @@
 This repository contains the init Containers defination, use and implementation of it.
 
     
-cat > myapp.yml
+       cat > myapp.yml
       kubectl create -f myapp.yml
       kubectl get pods -w
       kubectl get pods -o wide
