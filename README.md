@@ -17,7 +17,7 @@ A Pod can have multiple containers running apps within it, but it can also have 
       $ cat > myapp.yml : Copy the Code given in the myapp.yml file.
       $ kubectl create -f myapp.yml : Create a pod using this command
       $ kubectl get pods -w : check whether the pod is created or not 
-      $ kubectl get pods -o wide : Now check the staus of pod, till the pod is not getting service it will not run (it is in state of INit 0/2)
+      $ kubectl get pods -o wide : Now check the staus of pod, till the pod is not getting service it will not run (it is in state of init 0/2)
       $ kubectl describe -f myapp.yml : you can describe the file.
       $ kubectl logs myapp-pod -c init-myservice : using these command you can see the logs related the service
       $ kubectl logs myapp-pod -c init-mydb
