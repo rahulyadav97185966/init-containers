@@ -1,7 +1,7 @@
 # init-containers
 This repository contains the init Containers defination, use and implementation of it.<br>
 <li>
-    <ul>Official Doc Link :https://kubernetes.io/docs/concepts/workloads/pods/init-containers/ </ul>
+    Official Doc Link :https://kubernetes.io/docs/concepts/workloads/pods/init-containers/ 
  </li>
 # What is init Containers, where we use it ?
 
